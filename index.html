@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <main class="contenedor">
+        <div class="logo1">
+            <img class="logo" src="img/Logo.png" alt="logo">
+        </div>
+        <div class="contenedor-entrada">
+            <textarea name="texto-entrada" id="texto-entrada" placeholder="Ingrese el texto aquí" class="texto-entrada"></textarea>
+            <p class="informacion" id="informacion">Solo letras minúsculas y sin acentos</p>
+            <div class="contenedor-botones">
+                <button class="boton" id="encriptar">Encriptar</button>
+                <button class="boton boton-transparente" id="desencriptar">Desencriptar</button>
+                <button class="boton boton-transparente" id="limpiar">Limpiar</button>
+            </div>
+        </div>
+        <div class="contenedor-salida">
+            <div class="con-input" id="sin-texto">
+                <img class="muñeco" src="img/Muñeco.png" alt="ilustracion">
+                <div class="contenedor-texto">
+                    <p class="texto-aviso">Ningún mensaje fue encontrado</p>
+                    <p class="texto">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </div>
+            <div class="sin-input ocultar" id="con-texto">
+                <p class="texto-salida" id="texto-salida"></p>
+                <button class="boton boton-transparente boton-salida" id="copiar">Copiar</button>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
